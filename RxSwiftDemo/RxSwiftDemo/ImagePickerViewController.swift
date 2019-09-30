@@ -84,13 +84,14 @@ class ImagePickerController: UIViewController {
                 .flatMap { $0.rx.didFinishPickingMediaWithInfo }
                 .take(1)
             }
-        .map { info in
-            return info[.originalImage] as? UIImage
-        }
-        .bind(to: imageView.rx.image)
-        .disposed(by: disposeBag)
+            .map { info in
+                return info[.originalImage] as? UIImage
+            }
+            .bind(to: imageView.rx.image)
+            .disposed(by: disposeBag)
         
         galleryButton.rx.tap
+            .debug()
             .flatMapLatest { [weak self] _ in
                 return UIImagePickerController.rx.createWithParent(self) { picker in
                     picker.sourceType = .photoLibrary
@@ -108,6 +109,7 @@ class ImagePickerController: UIViewController {
             .disposed(by: disposeBag)
         
         cropButton.rx.tap
+            .debug()
             .flatMapLatest { [weak self] _ in
                 return UIImagePickerController.rx.createWithParent(self) { picker in
                     picker.sourceType = .photoLibrary
@@ -140,25 +142,25 @@ class ImagePickerController: UIViewController {
             picker.allowsEditing = true
         }
         
-        picker.delegate = self
+        //picker.delegate = self
         self.present(picker, animated: true, completion: nil)
     }
 }
 
-extension ImagePickerController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        var image: UIImage!
-        if picker.allowsEditing {
-            image = info[.editedImage] as? UIImage
-        } else {
-            image = info[.originalImage] as? UIImage
-        }
-        
-        self.imageView.image = image
-        self.dismiss(animated: true, completion: nil)
-        
-    }
-    
-}
+//extension ImagePickerController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+//
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+//
+//        var image: UIImage!
+//        if picker.allowsEditing {
+//            image = info[.editedImage] as? UIImage
+//        } else {
+//            image = info[.originalImage] as? UIImage
+//        }
+//
+//        self.imageView.image = image
+//        self.dismiss(animated: true, completion: nil)
+//
+//    }
+//
+//}

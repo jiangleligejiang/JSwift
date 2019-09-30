@@ -19,6 +19,7 @@
 		A15669032340DE73005AA4E8 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15669022340DE73005AA4E8 /* ImagePickerViewController.swift */; };
 		A15669052340E02D005AA4E8 /* ImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */; };
 		A15669072340E1BE005AA4E8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */; };
+		A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */; };
 		DBD9C4440C02DF9C979ACEBE /* Pods_RxSwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D6600AE9B30FCB78E0516 /* Pods_RxSwiftDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A15669022340DE73005AA4E8 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		AA348E594582F5B7AA8434F3 /* Pods_RxSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9B40AC304CEAC2F8660D5 /* Pods-RxSwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoUITests/Pods-RxSwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9CD9856C147DCD53893A1B8 /* Pods-RxSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoTests/Pods-RxSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				A15668E02340DE5B005AA4E8 /* Info.plist */,
 				A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */,
 				A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */,
+				A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */,
 			);
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A15668D32340DE5A005AA4E8 /* AppDelegate.swift in Sources */,
 				A15669052340E02D005AA4E8 /* ImagePickerController+RxCreate.swift in Sources */,
 				A15669032340DE73005AA4E8 /* ImagePickerViewController.swift in Sources */,
@@ -585,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V837WG2CJ;
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V837WG2CJ;
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

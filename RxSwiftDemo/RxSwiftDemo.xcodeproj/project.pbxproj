@@ -22,6 +22,23 @@
 		A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */; };
 		A17625B42341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625B32341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift */; };
 		A17625B62341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */; };
+		A17625BB2341DB31001B7820 /* GitHubSignupViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625BA2341DB31001B7820 /* GitHubSignupViewController1.swift */; };
+		A17625BD2341DB60001B7820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625BC2341DB60001B7820 /* ViewController.swift */; };
+		A17625BF2341E498001B7820 /* GithubSignupViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625BE2341E498001B7820 /* GithubSignupViewModel1.swift */; };
+		A17625C12341E4C6001B7820 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C02341E4C6001B7820 /* Protocols.swift */; };
+		A17625D12341EA0F001B7820 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C52341EA0F001B7820 /* ImageService.swift */; };
+		A17625D22341EA0F001B7820 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C62341EA0F001B7820 /* ReachabilityService.swift */; };
+		A17625D32341EA0F001B7820 /* PseudoRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C72341EA0F001B7820 /* PseudoRandomGenerator.swift */; };
+		A17625D42341EA0F001B7820 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C82341EA0F001B7820 /* Wireframe.swift */; };
+		A17625D52341EA0F001B7820 /* UIImageView+DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625C92341EA0F001B7820 /* UIImageView+DownloadableImage.swift */; };
+		A17625D62341EA0F001B7820 /* HtmlParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CA2341EA0F001B7820 /* HtmlParsing.swift */; };
+		A17625D72341EA0F001B7820 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CB2341EA0F001B7820 /* Randomizer.swift */; };
+		A17625D82341EA0F001B7820 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CC2341EA0F001B7820 /* UIImage+Extensions.swift */; };
+		A17625D92341EA0F001B7820 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CD2341EA0F001B7820 /* ActivityIndicator.swift */; };
+		A17625DA2341EA0F001B7820 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CE2341EA0F001B7820 /* Reachability.swift */; };
+		A17625DB2341EA0F001B7820 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625CF2341EA0F001B7820 /* GeolocationService.swift */; };
+		A17625DC2341EA0F001B7820 /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625D02341EA0F001B7820 /* DownloadableImage.swift */; };
+		A17625DE2341EFF5001B7820 /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625DD2341EFF5001B7820 /* DefaultImplementations.swift */; };
 		DBD9C4440C02DF9C979ACEBE /* Pods_RxSwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D6600AE9B30FCB78E0516 /* Pods_RxSwiftDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +85,23 @@
 		A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		A17625B32341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleSectionedViewController.swift; sourceTree = "<group>"; };
 		A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
+		A17625BA2341DB31001B7820 /* GitHubSignupViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignupViewController1.swift; sourceTree = "<group>"; };
+		A17625BC2341DB60001B7820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A17625BE2341E498001B7820 /* GithubSignupViewModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel1.swift; sourceTree = "<group>"; };
+		A17625C02341E4C6001B7820 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A17625C52341EA0F001B7820 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		A17625C62341EA0F001B7820 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		A17625C72341EA0F001B7820 /* PseudoRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PseudoRandomGenerator.swift; sourceTree = "<group>"; };
+		A17625C82341EA0F001B7820 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		A17625C92341EA0F001B7820 /* UIImageView+DownloadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadableImage.swift"; sourceTree = "<group>"; };
+		A17625CA2341EA0F001B7820 /* HtmlParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlParsing.swift; sourceTree = "<group>"; };
+		A17625CB2341EA0F001B7820 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		A17625CC2341EA0F001B7820 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		A17625CD2341EA0F001B7820 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A17625CE2341EA0F001B7820 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A17625CF2341EA0F001B7820 /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		A17625D02341EA0F001B7820 /* DownloadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
+		A17625DD2341EFF5001B7820 /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		AA348E594582F5B7AA8434F3 /* Pods_RxSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9B40AC304CEAC2F8660D5 /* Pods-RxSwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoUITests/Pods-RxSwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9CD9856C147DCD53893A1B8 /* Pods-RxSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoTests/Pods-RxSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +170,7 @@
 		A15668D12340DE5A005AA4E8 /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A17625B92341DB15001B7820 /* MVVM */,
 				A17625B22341ACFF001B7820 /* TableView */,
 				A17625B12341ACE7001B7820 /* ImagePicker */,
 				A15668D22340DE5A005AA4E8 /* AppDelegate.swift */,
@@ -144,6 +179,8 @@
 				A15668DB2340DE5A005AA4E8 /* Assets.xcassets */,
 				A15668DD2340DE5B005AA4E8 /* LaunchScreen.storyboard */,
 				A15668E02340DE5B005AA4E8 /* Info.plist */,
+				A17625BC2341DB60001B7820 /* ViewController.swift */,
+				A17625C42341EA0F001B7820 /* Services */,
 			);
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
@@ -184,6 +221,36 @@
 				A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		A17625B92341DB15001B7820 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				A17625BA2341DB31001B7820 /* GitHubSignupViewController1.swift */,
+				A17625BE2341E498001B7820 /* GithubSignupViewModel1.swift */,
+				A17625C02341E4C6001B7820 /* Protocols.swift */,
+				A17625DD2341EFF5001B7820 /* DefaultImplementations.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		A17625C42341EA0F001B7820 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A17625C52341EA0F001B7820 /* ImageService.swift */,
+				A17625C62341EA0F001B7820 /* ReachabilityService.swift */,
+				A17625C72341EA0F001B7820 /* PseudoRandomGenerator.swift */,
+				A17625C82341EA0F001B7820 /* Wireframe.swift */,
+				A17625C92341EA0F001B7820 /* UIImageView+DownloadableImage.swift */,
+				A17625CA2341EA0F001B7820 /* HtmlParsing.swift */,
+				A17625CB2341EA0F001B7820 /* Randomizer.swift */,
+				A17625CC2341EA0F001B7820 /* UIImage+Extensions.swift */,
+				A17625CD2341EA0F001B7820 /* ActivityIndicator.swift */,
+				A17625CE2341EA0F001B7820 /* Reachability.swift */,
+				A17625CF2341EA0F001B7820 /* GeolocationService.swift */,
+				A17625D02341EA0F001B7820 /* DownloadableImage.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		DA7A43BC60B32B9FB999B350 /* Pods */ = {
@@ -435,14 +502,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17625DB2341EA0F001B7820 /* GeolocationService.swift in Sources */,
+				A17625D42341EA0F001B7820 /* Wireframe.swift in Sources */,
+				A17625BD2341DB60001B7820 /* ViewController.swift in Sources */,
 				A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */,
+				A17625D82341EA0F001B7820 /* UIImage+Extensions.swift in Sources */,
 				A15668D32340DE5A005AA4E8 /* AppDelegate.swift in Sources */,
+				A17625C12341E4C6001B7820 /* Protocols.swift in Sources */,
+				A17625DE2341EFF5001B7820 /* DefaultImplementations.swift in Sources */,
+				A17625D62341EA0F001B7820 /* HtmlParsing.swift in Sources */,
+				A17625D72341EA0F001B7820 /* Randomizer.swift in Sources */,
+				A17625DC2341EA0F001B7820 /* DownloadableImage.swift in Sources */,
 				A17625B62341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
+				A17625D22341EA0F001B7820 /* ReachabilityService.swift in Sources */,
 				A15669052340E02D005AA4E8 /* ImagePickerController+RxCreate.swift in Sources */,
+				A17625D52341EA0F001B7820 /* UIImageView+DownloadableImage.swift in Sources */,
+				A17625BF2341E498001B7820 /* GithubSignupViewModel1.swift in Sources */,
 				A15669032340DE73005AA4E8 /* ImagePickerViewController.swift in Sources */,
+				A17625DA2341EA0F001B7820 /* Reachability.swift in Sources */,
 				A15669072340E1BE005AA4E8 /* UIImagePickerController+Rx.swift in Sources */,
+				A17625D92341EA0F001B7820 /* ActivityIndicator.swift in Sources */,
 				A17625B42341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift in Sources */,
+				A17625BB2341DB31001B7820 /* GitHubSignupViewController1.swift in Sources */,
 				A15668D52340DE5A005AA4E8 /* SceneDelegate.swift in Sources */,
+				A17625D32341EA0F001B7820 /* PseudoRandomGenerator.swift in Sources */,
+				A17625D12341EA0F001B7820 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

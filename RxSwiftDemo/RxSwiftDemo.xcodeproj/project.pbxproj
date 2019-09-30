@@ -20,6 +20,8 @@
 		A15669052340E02D005AA4E8 /* ImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */; };
 		A15669072340E1BE005AA4E8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */; };
 		A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */; };
+		A17625B42341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625B32341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift */; };
+		A17625B62341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */; };
 		DBD9C4440C02DF9C979ACEBE /* Pods_RxSwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D6600AE9B30FCB78E0516 /* Pods_RxSwiftDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		A17625B32341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleSectionedViewController.swift; sourceTree = "<group>"; };
+		A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
 		AA348E594582F5B7AA8434F3 /* Pods_RxSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9B40AC304CEAC2F8660D5 /* Pods-RxSwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoUITests/Pods-RxSwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9CD9856C147DCD53893A1B8 /* Pods-RxSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemoTests/Pods-RxSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,16 +136,14 @@
 		A15668D12340DE5A005AA4E8 /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A17625B22341ACFF001B7820 /* TableView */,
+				A17625B12341ACE7001B7820 /* ImagePicker */,
 				A15668D22340DE5A005AA4E8 /* AppDelegate.swift */,
 				A15668D42340DE5A005AA4E8 /* SceneDelegate.swift */,
-				A15669022340DE73005AA4E8 /* ImagePickerViewController.swift */,
 				A15668D82340DE5A005AA4E8 /* Main.storyboard */,
 				A15668DB2340DE5A005AA4E8 /* Assets.xcassets */,
 				A15668DD2340DE5B005AA4E8 /* LaunchScreen.storyboard */,
 				A15668E02340DE5B005AA4E8 /* Info.plist */,
-				A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */,
-				A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */,
-				A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */,
 			);
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
@@ -162,6 +164,26 @@
 				A15668F62340DE5B005AA4E8 /* Info.plist */,
 			);
 			path = RxSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		A17625B12341ACE7001B7820 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A15669022340DE73005AA4E8 /* ImagePickerViewController.swift */,
+				A15669042340E02D005AA4E8 /* ImagePickerController+RxCreate.swift */,
+				A15669062340E1BE005AA4E8 /* UIImagePickerController+Rx.swift */,
+				A17625A82341A5F6001B7820 /* RxImagePickerDelegateProxy.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		A17625B22341ACFF001B7820 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A17625B32341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift */,
+				A17625B52341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		DA7A43BC60B32B9FB999B350 /* Pods */ = {
@@ -383,7 +405,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -392,7 +416,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -411,9 +437,11 @@
 			files = (
 				A17625A92341A5F6001B7820 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A15668D32340DE5A005AA4E8 /* AppDelegate.swift in Sources */,
+				A17625B62341AF04001B7820 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
 				A15669052340E02D005AA4E8 /* ImagePickerController+RxCreate.swift in Sources */,
 				A15669032340DE73005AA4E8 /* ImagePickerViewController.swift in Sources */,
 				A15669072340E1BE005AA4E8 /* UIImagePickerController+Rx.swift in Sources */,
+				A17625B42341AD1C001B7820 /* SimpleTableViewExampleSectionedViewController.swift in Sources */,
 				A15668D52340DE5A005AA4E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

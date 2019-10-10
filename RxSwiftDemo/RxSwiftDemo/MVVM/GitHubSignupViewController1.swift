@@ -79,6 +79,7 @@ class GitHubSignupViewController1 : ViewController {
         
         self.addContraints()
         self.addViewModel()
+        self.test()
     }
     
     func test() {

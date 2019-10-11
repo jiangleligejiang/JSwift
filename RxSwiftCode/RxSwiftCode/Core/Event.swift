@@ -15,3 +15,16 @@ public enum Event<Element> {
     case completed
     
 }
+
+extension Event {
+    
+    public var isStopEvent: Bool {
+        switch self {
+        case .next:
+            return false
+        case .error, .completed:
+            return true
+        }
+    }
+    
+}

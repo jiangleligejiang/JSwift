@@ -79,28 +79,6 @@ class GitHubSignupViewController1 : ViewController {
         
         self.addContraints()
         self.addViewModel()
-        self.test()
-    }
-    
-    func test() {
-        let observable = Observable<Int>.create { (observer) -> Disposable in
-            observer.onNext(1)
-            observer.onNext(2)
-            observer.onNext(3)
-            observer.onCompleted()
-            return Disposables.create()
-        }
-        
-        let _ = observable.subscribe(onNext: { (num) in
-            print("receive num \(num)")
-        }, onError: { (error) in
-            print("error:\(error.localizedDescription)")
-        }, onCompleted: {
-            print("recieve complete")
-        }) {
-            print("finished")
-        }
-        
     }
     
     func addContraints() {

@@ -24,7 +24,7 @@ private class CurrentThreadSchedulerQueueKey: NSObject, NSCopying {
     
 }
 
-public class CurrentThreadScheduler: ImmediateScheduleType {
+public class CurrentThreadScheduler: ImmediateSchedulerType {
     
     typealias ScheduleQueue = RxMutableBox<Queue<ScheduledItemType>>
     

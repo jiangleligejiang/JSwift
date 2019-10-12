@@ -164,6 +164,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1128E5D2351D58E0071BFBB /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				A15A563A234C76A000AD1011 /* ObservableConvertibleType.swift */,
+				A15A563C234C7D2B00AD1011 /* ObservableType.swift */,
+				A15A5646234C82A900AD1011 /* Observable.swift */,
+				A15A564A234C85A400AD1011 /* Create.swift */,
+				A1DD40AE234C89F60008323D /* Producer.swift */,
+				A17479D9234DC61F00D7DEC6 /* ObservableType+Extensions.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		A1128E5E2351D5B60071BFBB /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				A15A5642234C813900AD1011 /* ObserverType.swift */,
+				A17479DB234DC6EA00D7DEC6 /* ObserverBase.swift */,
+				A15A564C234C861E00AD1011 /* AnyObserver.swift */,
+				A17479DD234DC90900D7DEC6 /* AnonymousObserver.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		A1128E5F2351D5C50071BFBB /* Disposable */ = {
+			isa = PBXGroup;
+			children = (
+				A1C15C9F234D7DE800A09902 /* DisposeBase.swift */,
+				A15A563E234C7D8700AD1011 /* Disposable.swift */,
+				A1DD40B0234CAAAB0008323D /* Cancelable.swift */,
+				A1C15CA1234D7E0E00A09902 /* SingleAssignmentDisposable.swift */,
+				A17479D5234DC4D200D7DEC6 /* Disposables.swift */,
+				A17479D7234DC4FC00D7DEC6 /* NopDisposable.swift */,
+				A17479DF234DCDD700D7DEC6 /* AnonymousDisposable.swift */,
+				A17479E1234DD13F00D7DEC6 /* BinaryDisposable.swift */,
+				A1EFFEBB234F27D800277B41 /* SerialDisposable.swift */,
+				A1EFFEBF234F32E900277B41 /* ScheduledDisposable.swift */,
+				A1792E5A2350304E00D9674B /* CompositeDisposable.swift */,
+				A17479D3234DBBD900D7DEC6 /* Sink.swift */,
+			);
+			path = Disposable;
+			sourceTree = "<group>";
+		};
+		A1128E602351D5F40071BFBB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A15A5648234C83B900AD1011 /* Rx.swift */,
+				A1DD40B2234CB3B60008323D /* Queue.swift */,
+				A1DD40B4234CBCD50008323D /* InvocableType.swift */,
+				A15A5644234C816600AD1011 /* Event.swift */,
+				A1BF4B84234CC11A00EEF72F /* RxMutableBox.swift */,
+				A1BF4B88234CC3E400EEF72F /* Platform.Darwin.swift */,
+				A1C15CA3234D7F7300A09902 /* AtomicInt.swift */,
+				A1EFFEBD234F286B00277B41 /* Lock.swift */,
+				A1792E5823502C3400D9674B /* Bag.swift */,
+				A1792E5C235035E200D9674B /* Bag+Rx.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A1128E612351D6200071BFBB /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD40B6234CBD1E0008323D /* ScheduledItemType.swift */,
+				A1BF4B82234CC08100EEF72F /* ImmediateScheduledType.swift */,
+				A1EFFEC5234F367A00277B41 /* SchedulerType.swift */,
+				A1C15C9D234D7CB300A09902 /* ScheduledItem.swift */,
+				A1BF4B86234CC18900EEF72F /* CurrentThreadScheduler.swift */,
+				A1EFFEC3234F365300277B41 /* SerialDispatchQueueScheduler.swift */,
+				A1792E5E2350579500D9674B /* DispatchQueueConfiguration.swift */,
+				A1792E602350704800D9674B /* RecursiveScheduler.swift */,
+				A1792E6423507C6600D9674B /* MainScheduler.swift */,
+				A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		A1128E622351D6BD0071BFBB /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A1EFFEB9234F222000277B41 /* SubscribeOn.swift */,
+				A1EFFEC1234F358900277B41 /* ObserveOn.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
 		A15A55FD234C763600AD1011 = {
 			isa = PBXGroup;
 			children = (
@@ -220,50 +306,12 @@
 		A15A5639234C764200AD1011 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A15A563A234C76A000AD1011 /* ObservableConvertibleType.swift */,
-				A15A563C234C7D2B00AD1011 /* ObservableType.swift */,
-				A15A563E234C7D8700AD1011 /* Disposable.swift */,
-				A15A5642234C813900AD1011 /* ObserverType.swift */,
-				A15A5644234C816600AD1011 /* Event.swift */,
-				A15A5646234C82A900AD1011 /* Observable.swift */,
-				A15A5648234C83B900AD1011 /* Rx.swift */,
-				A15A564A234C85A400AD1011 /* Create.swift */,
-				A15A564C234C861E00AD1011 /* AnyObserver.swift */,
-				A1DD40AE234C89F60008323D /* Producer.swift */,
-				A1DD40B0234CAAAB0008323D /* Cancelable.swift */,
-				A1DD40B2234CB3B60008323D /* Queue.swift */,
-				A1DD40B4234CBCD50008323D /* InvocableType.swift */,
-				A1DD40B6234CBD1E0008323D /* ScheduledItemType.swift */,
-				A1BF4B82234CC08100EEF72F /* ImmediateScheduledType.swift */,
-				A1BF4B84234CC11A00EEF72F /* RxMutableBox.swift */,
-				A1BF4B86234CC18900EEF72F /* CurrentThreadScheduler.swift */,
-				A1BF4B88234CC3E400EEF72F /* Platform.Darwin.swift */,
-				A1C15C9D234D7CB300A09902 /* ScheduledItem.swift */,
-				A1C15C9F234D7DE800A09902 /* DisposeBase.swift */,
-				A1C15CA1234D7E0E00A09902 /* SingleAssignmentDisposable.swift */,
-				A1C15CA3234D7F7300A09902 /* AtomicInt.swift */,
-				A17479D3234DBBD900D7DEC6 /* Sink.swift */,
-				A17479D5234DC4D200D7DEC6 /* Disposables.swift */,
-				A17479D7234DC4FC00D7DEC6 /* NopDisposable.swift */,
-				A17479D9234DC61F00D7DEC6 /* ObservableType+Extensions.swift */,
-				A17479DB234DC6EA00D7DEC6 /* ObserverBase.swift */,
-				A17479DD234DC90900D7DEC6 /* AnonymousObserver.swift */,
-				A17479DF234DCDD700D7DEC6 /* AnonymousDisposable.swift */,
-				A17479E1234DD13F00D7DEC6 /* BinaryDisposable.swift */,
-				A1EFFEB9234F222000277B41 /* SubscribeOn.swift */,
-				A1EFFEBB234F27D800277B41 /* SerialDisposable.swift */,
-				A1EFFEBD234F286B00277B41 /* Lock.swift */,
-				A1EFFEBF234F32E900277B41 /* ScheduledDisposable.swift */,
-				A1EFFEC1234F358900277B41 /* ObserveOn.swift */,
-				A1EFFEC3234F365300277B41 /* SerialDispatchQueueScheduler.swift */,
-				A1EFFEC5234F367A00277B41 /* SchedulerType.swift */,
-				A1792E5823502C3400D9674B /* Bag.swift */,
-				A1792E5A2350304E00D9674B /* CompositeDisposable.swift */,
-				A1792E5C235035E200D9674B /* Bag+Rx.swift */,
-				A1792E5E2350579500D9674B /* DispatchQueueConfiguration.swift */,
-				A1792E602350704800D9674B /* RecursiveScheduler.swift */,
-				A1792E6423507C6600D9674B /* MainScheduler.swift */,
-				A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */,
+				A1128E602351D5F40071BFBB /* Base */,
+				A1128E622351D6BD0071BFBB /* Operation */,
+				A1128E612351D6200071BFBB /* Scheduler */,
+				A1128E5F2351D5C50071BFBB /* Disposable */,
+				A1128E5E2351D5B60071BFBB /* Observer */,
+				A1128E5D2351D58E0071BFBB /* Observable */,
 			);
 			path = Core;
 			sourceTree = "<group>";

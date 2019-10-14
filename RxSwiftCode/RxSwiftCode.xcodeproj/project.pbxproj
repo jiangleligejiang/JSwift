@@ -25,6 +25,8 @@
 		A15A5649234C83B900AD1011 /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A5648234C83B900AD1011 /* Rx.swift */; };
 		A15A564B234C85A400AD1011 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A564A234C85A400AD1011 /* Create.swift */; };
 		A15A564D234C861E00AD1011 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A564C234C861E00AD1011 /* AnyObserver.swift */; };
+		A170F57D235458D4008E04C6 /* PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170F57C235458D4008E04C6 /* PrimitiveSequence.swift */; };
+		A170F57F235459D4008E04C6 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170F57E235459D4008E04C6 /* Single.swift */; };
 		A17479D4234DBBD900D7DEC6 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17479D3234DBBD900D7DEC6 /* Sink.swift */; };
 		A17479D6234DC4D200D7DEC6 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17479D5234DC4D200D7DEC6 /* Disposables.swift */; };
 		A17479D8234DC4FC00D7DEC6 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17479D7234DC4FC00D7DEC6 /* NopDisposable.swift */; };
@@ -104,6 +106,8 @@
 		A15A5648234C83B900AD1011 /* Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rx.swift; sourceTree = "<group>"; };
 		A15A564A234C85A400AD1011 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
 		A15A564C234C861E00AD1011 /* AnyObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObserver.swift; sourceTree = "<group>"; };
+		A170F57C235458D4008E04C6 /* PrimitiveSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitiveSequence.swift; sourceTree = "<group>"; };
+		A170F57E235459D4008E04C6 /* Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
 		A17479D3234DBBD900D7DEC6 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		A17479D5234DC4D200D7DEC6 /* Disposables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposables.swift; sourceTree = "<group>"; };
 		A17479D7234DC4FC00D7DEC6 /* NopDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NopDisposable.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				A1EFFEB9234F222000277B41 /* SubscribeOn.swift */,
 				A1EFFEC1234F358900277B41 /* ObserveOn.swift */,
 				A146C18F2354251F008FBAD2 /* Just.swift */,
+				A170F57C235458D4008E04C6 /* PrimitiveSequence.swift */,
+				A170F57E235459D4008E04C6 /* Single.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				A17479E2234DD13F00D7DEC6 /* BinaryDisposable.swift in Sources */,
 				A1BF4B89234CC3E400EEF72F /* Platform.Darwin.swift in Sources */,
 				A1EFFEC6234F367A00277B41 /* SchedulerType.swift in Sources */,
+				A170F57D235458D4008E04C6 /* PrimitiveSequence.swift in Sources */,
 				A17479DC234DC6EA00D7DEC6 /* ObserverBase.swift in Sources */,
 				A15A5645234C816600AD1011 /* Event.swift in Sources */,
 				A15A560E234C763600AD1011 /* ViewController.swift in Sources */,
@@ -494,6 +501,7 @@
 				A15A5649234C83B900AD1011 /* Rx.swift in Sources */,
 				A1BF4B85234CC11A00EEF72F /* RxMutableBox.swift in Sources */,
 				A15A560C234C763600AD1011 /* SceneDelegate.swift in Sources */,
+				A170F57F235459D4008E04C6 /* Single.swift in Sources */,
 				A15A563D234C7D2B00AD1011 /* ObservableType.swift in Sources */,
 				A1EFFEBA234F222000277B41 /* SubscribeOn.swift in Sources */,
 				A1C15C9E234D7CB300A09902 /* ScheduledItem.swift in Sources */,

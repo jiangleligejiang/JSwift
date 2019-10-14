@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.justOpTest()
+        self.singleOpTest()
     }
 
     func simpleTest() {
@@ -50,6 +50,45 @@ class ViewController: UIViewController {
             }) {
                 print("finished")
         }
+    }
+    
+    func singleOpTest() {
+           
+           func getRepo(_ repo: String) -> Single<[String: Any]> {
+               
+               return Single<[String: Any]>.create { (single) -> Disposable in
+                   let url = URL(string: "https://api.github.com/repos/\(repo)")!
+                   let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+                       
+                       if let error = error {
+                           single(.error(error))
+                           return
+                       }
+                       
+                       guard let data = data,
+                           let json = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves),
+                           let result = json as? [String: Any] else {
+                               single(.error(NSError.init(domain: "DataError.cantParseJSON", code: 2, userInfo: nil)))
+                               return
+                           }
+                       
+                       single(.success(result))
+                       
+                   }
+                   task.resume()
+                   return Disposables.create {
+                       task.cancel()
+                   }
+               }
+           }
+           
+           let _ = getRepo("ReactiveX/RxSwift")
+            .subscribe(onSuccess: { (result) in
+                print("result: \(result)")
+            }) { (error) in
+                print("error: \(error)")
+            }
+        
     }
     
     func schedulersTest() {

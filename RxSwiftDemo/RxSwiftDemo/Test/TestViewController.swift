@@ -14,7 +14,7 @@ class TestViewController : ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        self.schedulersTest()
+        self.justOpTest()
     }
     
 }
@@ -38,6 +38,19 @@ extension TestViewController {
             print("recieve complete")
         }) {
             print("finished")
+        }
+    }
+    
+    func justOpTest() {
+        let _ = Observable.just([1, 2, 3], scheduler: SerialDispatchQueueScheduler.init(qos: .userInitiated))
+            .subscribe(onNext: { (num) in
+                print("receive num \(num) is in mainthread: \(Thread.current.isMainThread)")
+            }, onError: { (error) in
+                print("error:\(error.localizedDescription)")
+            }, onCompleted: {
+                print("recieve complete")
+            }) {
+                print("finished")
         }
     }
     

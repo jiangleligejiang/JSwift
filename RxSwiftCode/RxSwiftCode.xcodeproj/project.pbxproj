@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A146C1902354251F008FBAD2 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = A146C18F2354251F008FBAD2 /* Just.swift */; };
 		A15A560A234C763600AD1011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A5609234C763600AD1011 /* AppDelegate.swift */; };
 		A15A560C234C763600AD1011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A560B234C763600AD1011 /* SceneDelegate.swift */; };
 		A15A560E234C763600AD1011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A560D234C763600AD1011 /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A146C18F2354251F008FBAD2 /* Just.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
 		A15A5606234C763600AD1011 /* RxSwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15A5609234C763600AD1011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15A560B234C763600AD1011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				A1EFFEB9234F222000277B41 /* SubscribeOn.swift */,
 				A1EFFEC1234F358900277B41 /* ObserveOn.swift */,
+				A146C18F2354251F008FBAD2 /* Just.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				A1C15CA4234D7F7300A09902 /* AtomicInt.swift in Sources */,
 				A15A560A234C763600AD1011 /* AppDelegate.swift in Sources */,
 				A1792E5F2350579500D9674B /* DispatchQueueConfiguration.swift in Sources */,
+				A146C1902354251F008FBAD2 /* Just.swift in Sources */,
 				A17479DA234DC61F00D7DEC6 /* ObservableType+Extensions.swift in Sources */,
 				A17479DE234DC90900D7DEC6 /* AnonymousObserver.swift in Sources */,
 				A1792E6523507C6600D9674B /* MainScheduler.swift in Sources */,

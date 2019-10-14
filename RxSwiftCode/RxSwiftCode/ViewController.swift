@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.schedulersTest()
+        self.justOpTest()
     }
 
     func simpleTest() {
@@ -35,6 +35,20 @@ class ViewController: UIViewController {
             print("recieve complete")
         }) {
             print("finished")
+        }
+    }
+    
+    func justOpTest() {
+        let _ = Observable.just([1,2,3], scheduler: SerialDispatchQueueScheduler.init(qos: .userInitiated))
+            .subscribe(onNext: { (num) in
+                print("receive num is in main thread: \(Thread.current.isMainThread)")
+                print("receive num \(num)")
+            }, onError: { (error) in
+                print("error:\(error.localizedDescription)")
+            }, onCompleted: {
+                print("recieve complete is in main thread: \(Thread.current.isMainThread)")
+            }) {
+                print("finished")
         }
     }
     

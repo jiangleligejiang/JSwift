@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.singleOpTest()
+        self.publishSubjectTest()
     }
 
     func simpleTest() {
@@ -115,6 +115,33 @@ class ViewController: UIViewController {
                 }) {
                     print("finished")
             }
+        
+    }
+    
+    func publishSubjectTest() {
+        let disposeBag = DisposeBag()
+        let subject = PublishSubject<String>()
+        
+    
+        
+        subject
+            .subscribe {
+                print("subscription: 1 Event: ", $0)
+            }
+            .disposed(by: disposeBag)
+        
+        subject.onNext("h")
+        subject.onNext("e")
+        subject.onNext("l")
+        
+        subject
+         .subscribe {
+            print("subscription: 2 Event: ", $0)
+        }
+         .disposed(by: disposeBag)
+        
+        subject.onNext("l")
+        subject.onNext("o")
         
     }
 

@@ -14,7 +14,7 @@ class TestViewController : ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        self.justOpTest()
+        self.publishSubjectTest()
     }
     
 }
@@ -93,6 +93,31 @@ extension TestViewController {
             .disposed(by: disposeBag)
     }
     
+    func completableOpTest() {
+        let _ = Completable.create { (completable) -> Disposable in
+            completable(.completed)
+            return Disposables.create()
+        }.subscribe(onCompleted: {
+            print("completed")
+        }) { (error) in
+            print("error: \(error)")
+        }
+    }
+    
+    func maybeOpTest() {
+        let _ = Maybe<String>.create { (maybe) -> Disposable in
+                    maybe(.success("success"))
+                    maybe(.completed)
+                    return Disposables.create()
+                }.subscribe(onSuccess: { (str) in
+                    print("message: \(str)")
+                }, onError: { (error) in
+                    print("error: \(error)")
+                }) {
+                    print("completed")
+                }
+    }
+    
     func schedulersTest() {
         
         let rxData: Observable<String> = Observable.create { (observer) -> Disposable in
@@ -119,4 +144,47 @@ extension TestViewController {
             }
         
     }
+}
+
+
+extension TestViewController {
+    
+    func asyncSubjectTest() {
+        let subject = AsyncSubject<String>()
+        subject
+            .subscribe { print("subscription: 1 Event:", $0) }
+            .disposed(by: self.disposeBag)
+        subject.onNext("h")
+        subject.onNext("e")
+        subject.onNext("l")
+        subject.onCompleted()
+    }
+    
+    func publishSubjectTest() {
+        let subject = PublishSubject<String>()
+        
+    
+        
+        subject
+            .subscribe {
+                print("subscription: 1 Event: ", $0)
+            }
+            .disposed(by: self.disposeBag)
+        
+        subject.onNext("h")
+        subject.onNext("e")
+        subject.onNext("l")
+        
+        subject
+         .subscribe {
+            print("subscription: 2 Event: ", $0)
+        }
+         .disposed(by: self.disposeBag)
+        
+        subject.onNext("l")
+        subject.onNext("o")
+        
+    }
+    
+    
 }

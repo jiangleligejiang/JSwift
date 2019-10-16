@@ -68,6 +68,8 @@
 		A1EFFEC2234F358900277B41 /* ObserveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFFEC1234F358900277B41 /* ObserveOn.swift */; };
 		A1EFFEC4234F365300277B41 /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFFEC3234F365300277B41 /* SerialDispatchQueueScheduler.swift */; };
 		A1EFFEC6234F367A00277B41 /* SchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EFFEC5234F367A00277B41 /* SchedulerType.swift */; };
+		A1F04EDA235719210043F29E /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F04ED9235719210043F29E /* Filter.swift */; };
+		A1F04EDC23571EF10043F29E /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F04EDB23571EF10043F29E /* Sequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		A1EFFEC1234F358900277B41 /* ObserveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveOn.swift; sourceTree = "<group>"; };
 		A1EFFEC3234F365300277B41 /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		A1EFFEC5234F367A00277B41 /* SchedulerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerType.swift; sourceTree = "<group>"; };
+		A1F04ED9235719210043F29E /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		A1F04EDB23571EF10043F29E /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,7 @@
 				A1792E5823502C3400D9674B /* Bag.swift */,
 				A1792E5C235035E200D9674B /* Bag+Rx.swift */,
 				A194057E2355F9590007C1BE /* Errors.swift */,
+				A1F04EDB23571EF10043F29E /* Sequence.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				A146C18F2354251F008FBAD2 /* Just.swift */,
 				A170F57C235458D4008E04C6 /* PrimitiveSequence.swift */,
 				A170F57E235459D4008E04C6 /* Single.swift */,
+				A1F04ED9235719210043F29E /* Filter.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -494,7 +500,9 @@
 				A17479E2234DD13F00D7DEC6 /* BinaryDisposable.swift in Sources */,
 				A1BF4B89234CC3E400EEF72F /* Platform.Darwin.swift in Sources */,
 				A1EFFEC6234F367A00277B41 /* SchedulerType.swift in Sources */,
+				A1F04EDC23571EF10043F29E /* Sequence.swift in Sources */,
 				A170F57D235458D4008E04C6 /* PrimitiveSequence.swift in Sources */,
+				A1F04EDA235719210043F29E /* Filter.swift in Sources */,
 				A17479DC234DC6EA00D7DEC6 /* ObserverBase.swift in Sources */,
 				A15A5645234C816600AD1011 /* Event.swift in Sources */,
 				A15A560E234C763600AD1011 /* ViewController.swift in Sources */,

@@ -14,10 +14,12 @@ class TestViewController : ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        self.publishSubjectTest()
+        self.filterOpTest()
     }
     
 }
+
+// MARK: Observable
 
 extension TestViewController {
     
@@ -118,6 +120,13 @@ extension TestViewController {
                 }
     }
     
+    
+}
+
+// MARK: scheduler
+
+extension TestViewController {
+    
     func schedulersTest() {
         
         let rxData: Observable<String> = Observable.create { (observer) -> Disposable in
@@ -144,8 +153,10 @@ extension TestViewController {
             }
         
     }
+    
 }
 
+// MARK: observable & observer
 
 extension TestViewController {
     
@@ -186,5 +197,19 @@ extension TestViewController {
         
     }
     
+}
+
+// MARK: operations
+
+extension TestViewController {
+    
+    func filterOpTest() {
+        let disposeBag = DisposeBag()
+        
+        Observable.of(2, 30, 22, 5, 60, 1)
+            .filter { $0 > 10 }
+        .subscribe(onNext: {print($0)})
+        .disposed(by: disposeBag)
+    }
     
 }

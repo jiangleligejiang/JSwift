@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.publishSubjectTest()
+        self.filterOpTest()
     }
 
     func simpleTest() {
@@ -147,3 +147,17 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: operations
+
+extension ViewController {
+    
+   func filterOpTest() {
+        let disposeBag = DisposeBag()
+        
+        Observable.of(2, 30, 22, 5, 60, 1)
+            .filter { $0 > 10 }
+        .subscribe(onNext: {print($0)})
+        .disposed(by: disposeBag)
+    }
+    
+}

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.filterOpTest()
+        self.flatMapOpTest()
     }
 
     func simpleTest() {
@@ -158,6 +158,16 @@ extension ViewController {
             .filter { $0 > 10 }
         .subscribe(onNext: {print($0)})
         .disposed(by: disposeBag)
+    }
+    
+    func flatMapOpTest() {
+        let disposeBag = DisposeBag()
+        Observable.of(1,2,3)
+            .flatMap { Observable<String>.just(">>"+"\($0)") }
+            .subscribe(onNext: { element in
+                print("element: ", element)
+            })
+            .disposed(by: disposeBag)
     }
     
 }

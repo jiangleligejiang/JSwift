@@ -42,6 +42,7 @@
 		A1792E612350704800D9674B /* RecursiveScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1792E602350704800D9674B /* RecursiveScheduler.swift */; };
 		A1792E6523507C6600D9674B /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1792E6423507C6600D9674B /* MainScheduler.swift */; };
 		A1792E6723507D4000D9674B /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */; };
+		A18272282358949C00F29088 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18272272358949C00F29088 /* Merge.swift */; };
 		A19405762355E6220007C1BE /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19405752355E6220007C1BE /* DisposeBag.swift */; };
 		A19405792355F2F00007C1BE /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19405782355F2F00007C1BE /* PublishSubject.swift */; };
 		A194057B2355F3050007C1BE /* SubjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194057A2355F3050007C1BE /* SubjectType.swift */; };
@@ -131,6 +132,7 @@
 		A1792E602350704800D9674B /* RecursiveScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveScheduler.swift; sourceTree = "<group>"; };
 		A1792E6423507C6600D9674B /* MainScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScheduler.swift; sourceTree = "<group>"; };
 		A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		A18272272358949C00F29088 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		A19405752355E6220007C1BE /* DisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBag.swift; sourceTree = "<group>"; };
 		A19405782355F2F00007C1BE /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		A194057A2355F3050007C1BE /* SubjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectType.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				A170F57C235458D4008E04C6 /* PrimitiveSequence.swift */,
 				A170F57E235459D4008E04C6 /* Single.swift */,
 				A1F04ED9235719210043F29E /* Filter.swift */,
+				A18272272358949C00F29088 /* Merge.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				A15A560A234C763600AD1011 /* AppDelegate.swift in Sources */,
 				A1792E5F2350579500D9674B /* DispatchQueueConfiguration.swift in Sources */,
 				A146C1902354251F008FBAD2 /* Just.swift in Sources */,
+				A18272282358949C00F29088 /* Merge.swift in Sources */,
 				A17479DA234DC61F00D7DEC6 /* ObservableType+Extensions.swift in Sources */,
 				A17479DE234DC90900D7DEC6 /* AnonymousObserver.swift in Sources */,
 				A1792E6523507C6600D9674B /* MainScheduler.swift in Sources */,

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //self.simpleTest()
-        self.flatMapOpTest()
+        self.zipOpTest()
     }
 
     func simpleTest() {
@@ -167,6 +167,23 @@ extension ViewController {
             .subscribe(onNext: { element in
                 print("element: ", element)
             })
+            .disposed(by: disposeBag)
+    }
+    
+    func zipOpTest() {
+        let disposeBag = DisposeBag()
+        let observable1 = Observable.of(1,2,3)
+        let observable2 = Observable<String>.create { (observer) -> Disposable in
+            observer.onNext("str1")
+            observer.onNext("str2")
+            observer.onCompleted()
+            return Disposables.create()
+        }
+        
+        Observable.zip(observable1, observable2){ (num, str) in
+                return ("str: \(str) and num : \(num)")
+            }
+            .subscribe(onNext: { print($0) })
             .disposed(by: disposeBag)
     }
     

@@ -43,6 +43,10 @@
 		A1792E6523507C6600D9674B /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1792E6423507C6600D9674B /* MainScheduler.swift */; };
 		A1792E6723507D4000D9674B /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */; };
 		A18272282358949C00F29088 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18272272358949C00F29088 /* Merge.swift */; };
+		A18620FA2359901F00080A51 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18620F92359901F00080A51 /* Zip.swift */; };
+		A18620FC2359903200080A51 /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18620FB2359903200080A51 /* Zip+arity.swift */; };
+		A18620FE2359982D00080A51 /* LockOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18620FD2359982D00080A51 /* LockOwner.swift */; };
+		A18621032359992900080A51 /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18621022359992900080A51 /* SynchronizedOnType.swift */; };
 		A19405762355E6220007C1BE /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19405752355E6220007C1BE /* DisposeBag.swift */; };
 		A19405792355F2F00007C1BE /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19405782355F2F00007C1BE /* PublishSubject.swift */; };
 		A194057B2355F3050007C1BE /* SubjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194057A2355F3050007C1BE /* SubjectType.swift */; };
@@ -133,6 +137,10 @@
 		A1792E6423507C6600D9674B /* MainScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScheduler.swift; sourceTree = "<group>"; };
 		A1792E6623507D4000D9674B /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		A18272272358949C00F29088 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		A18620F92359901F00080A51 /* Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
+		A18620FB2359903200080A51 /* Zip+arity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Zip+arity.swift"; sourceTree = "<group>"; };
+		A18620FD2359982D00080A51 /* LockOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockOwner.swift; sourceTree = "<group>"; };
+		A18621022359992900080A51 /* SynchronizedOnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedOnType.swift; sourceTree = "<group>"; };
 		A19405752355E6220007C1BE /* DisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBag.swift; sourceTree = "<group>"; };
 		A19405782355F2F00007C1BE /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		A194057A2355F3050007C1BE /* SubjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectType.swift; sourceTree = "<group>"; };
@@ -247,6 +255,8 @@
 				A1792E5C235035E200D9674B /* Bag+Rx.swift */,
 				A194057E2355F9590007C1BE /* Errors.swift */,
 				A1F04EDB23571EF10043F29E /* Sequence.swift */,
+				A18620FD2359982D00080A51 /* LockOwner.swift */,
+				A18621022359992900080A51 /* SynchronizedOnType.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -278,6 +288,8 @@
 				A170F57E235459D4008E04C6 /* Single.swift */,
 				A1F04ED9235719210043F29E /* Filter.swift */,
 				A18272272358949C00F29088 /* Merge.swift */,
+				A18620F92359901F00080A51 /* Zip.swift */,
+				A18620FB2359903200080A51 /* Zip+arity.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -514,6 +526,7 @@
 				A1DD40B5234CBCD50008323D /* InvocableType.swift in Sources */,
 				A15A563F234C7D8700AD1011 /* Disposable.swift in Sources */,
 				A1EFFEC4234F365300277B41 /* SerialDispatchQueueScheduler.swift in Sources */,
+				A18620FA2359901F00080A51 /* Zip.swift in Sources */,
 				A1C15CA2234D7E0E00A09902 /* SingleAssignmentDisposable.swift in Sources */,
 				A19405792355F2F00007C1BE /* PublishSubject.swift in Sources */,
 				A15A5643234C813900AD1011 /* ObserverType.swift in Sources */,
@@ -532,6 +545,7 @@
 				A17479D4234DBBD900D7DEC6 /* Sink.swift in Sources */,
 				A1792E5B2350304E00D9674B /* CompositeDisposable.swift in Sources */,
 				A1EFFEBE234F286B00277B41 /* Lock.swift in Sources */,
+				A18620FE2359982D00080A51 /* LockOwner.swift in Sources */,
 				A1C15CA0234D7DE800A09902 /* DisposeBase.swift in Sources */,
 				A15A564B234C85A400AD1011 /* Create.swift in Sources */,
 				A15A564D234C861E00AD1011 /* AnyObserver.swift in Sources */,
@@ -542,9 +556,11 @@
 				A15A5649234C83B900AD1011 /* Rx.swift in Sources */,
 				A1BF4B85234CC11A00EEF72F /* RxMutableBox.swift in Sources */,
 				A15A560C234C763600AD1011 /* SceneDelegate.swift in Sources */,
+				A18621032359992900080A51 /* SynchronizedOnType.swift in Sources */,
 				A194057B2355F3050007C1BE /* SubjectType.swift in Sources */,
 				A170F57F235459D4008E04C6 /* Single.swift in Sources */,
 				A15A563D234C7D2B00AD1011 /* ObservableType.swift in Sources */,
+				A18620FC2359903200080A51 /* Zip+arity.swift in Sources */,
 				A1EFFEBA234F222000277B41 /* SubscribeOn.swift in Sources */,
 				A194057F2355F9590007C1BE /* Errors.swift in Sources */,
 				A1C15C9E234D7CB300A09902 /* ScheduledItem.swift in Sources */,

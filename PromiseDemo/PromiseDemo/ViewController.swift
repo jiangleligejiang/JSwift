@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var imageView1: UIImageView!
     
     var imageView2: UIImageView!
+    
+    let loadingView = UIActivityIndicatorView.init(style: .large)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +31,18 @@ class ViewController: UIViewController {
         imageView2.contentMode = .scaleAspectFit
         self.view.addSubview(imageView2)
         
+        loadingView.center = self.view.center
+        self.view.addSubview(loadingView)
+        
         self.fetchImage()
         
-        firstly {
-            self.getIcon(name: "photo-1570397382379-a66f8b2aa37f")
-        }.done { (image) in
-            self.imageView1.image = image
-        }.catch { (error) in
-            self.show(UIAlertController(title: "error", message: error.localizedDescription, preferredStyle: .alert), sender: self)
-        }
+//        firstly {
+//            self.getIcon(name: "photo-1570397382379-a66f8b2aa37f")
+//        }.done { (image) in
+//            self.imageView1.image = image
+//        }.catch { (error) in
+//            self.show(UIAlertController(title: "error", message: error.localizedDescription, preferredStyle: .alert), sender: self)
+//        }
         
     }
     
@@ -65,8 +70,9 @@ class ViewController: UIViewController {
     
     func fetchImage() {
         
+        self.loadingView.startAnimating()
         firstly {
-            Promise<UIImage>() { seal in
+            Promise<Data>() { seal in
                 let url = URL(string: "https://images.unsplash.com/photo-1570949654138-dab4fdd8c579")!
                 let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let error = error {
@@ -74,20 +80,33 @@ class ViewController: UIViewController {
                         return
                     }
                     
-                    if let data = data, let image = UIImage(data: data){
-                        seal.fulfill(image)
+                    if let data = data {
+                        seal.fulfill(data)
                         return
                     }
-                    let err = NSError(domain: "image", code: -1, userInfo: [NSLocalizedDescriptionKey : "can not get data"])
+                    let err = NSError(domain: "data", code: -1, userInfo: [NSLocalizedDescriptionKey : "can not get data"])
                     seal.reject(err)
                 }
                 task.resume()
             }
-        }.done { (image) in
+        }
+        .then { (data) in
+            Promise<UIImage>() { seal in
+                if let image = UIImage(data: data) {
+                    seal.fulfill(image)
+                } else {
+                    let err = NSError(domain: "image", code: 0, userInfo: [NSLocalizedDescriptionKey : "data convert to image failed"])
+                    seal.reject(err)
+                }
+            }
+        }
+        .done { (image) in
             self.imageView1.image = image
-        }.ensure {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }.catch { (error) in
+        }
+        .ensure {
+            self.loadingView.stopAnimating()
+        }
+        .catch { (error) in
             self.show(UIAlertController(title: "error", message: error.localizedDescription, preferredStyle: .alert), sender: self)
         }
         
